@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Hue Are You?</title>
+	<link rel="stylesheet" href="style.css"/>
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+
+      $(".tab").click(function() {
+				let section = $(this).closest(".colour-section");
+				if (section.hasClass("active")) {
+					section.removeClass("active").find(".content").slideUp();
+				} else {
+					$(".colour-section.active").removeClass("active").find(".content").slideUp();
+					section.addClass("active").find(".content").slideDown();
+				}
+			});
+			$(".close-btn").click(function() {
+				$(this).closest(".colour-section").removeClass("active").find(".content").slideUp(800);
+			});
+
+      $(".redplus").click(function() {
+				$(".redplus-content").slideToggle();
+			});
+			$(".redminus").click(function() {
+				$(".redminus-content").slideToggle();
+			});
+
+      $(".yellowplus").click(function() {
+        $(".yellowplus-content").slideToggle();
+      });
+      $(".yellowminus").click(function() {
+        $(".yellowminus-content").slideToggle();
+      });
+
+      $(".greenplus").click(function() {
+        $(".greenplus-content").slideToggle();
+      });
+      $(".greenminus").click(function() {
+        $(".greenminus-content").slideToggle();
+      });
+
+      $(".blueplus").click(function() {
+        $(".blueplus-content").slideToggle();
+      });
+      $(".blueminus").click(function() {
+        $(".blueminus-content").slideToggle();
+      });
+
+      $(".purpleplus").click(function() {
+        $(".purpleplus-content").slideToggle();
+      });
+      $(".purpleminus").click(function() {
+        $(".purpleminus-content").slideToggle();
+      });
+
+      $("#backTop").click(function() {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+			});
+		});
+	</script>
+</head>
+
+<body>
+  <header class="intro">
+    <h1 class="title">
+      <span class="hue">Hue</span> <span class="are">are</span> <span class="you">you?</span>
+    </h1>
+    <p>
+      Colour plays a powerful role in how we perceive brands. It can influence emotions, shape buying decisions, and even define a brand’s personality before a single word is read. Whether you're building a brand from scratch or refreshing an existing one, choosing the right colour is key.
+    </p>
+    <p>
+      Psychologists and marketers have long studied the impact of colour on human behaviour. In branding, each colour carries its own emotional weight and meaning. Brands like 
+      <span class="brand coca">Coca-Cola</span>, 
+      <span class="brand spotify">Spotify</span>, and 
+      <span class="brand cadbury">Cadbury</span> 
+      don’t just use colour — they own it.
+    </p>
+    <p>
+      This website breaks down the psychology behind five of the most commonly used branding colours. Whether you’re launching a startup, designing a logo, or just curious about colour theory, this guide will help you understand what each hue communicates — and how it can strengthen your brand identity.
+    </p>
+    <p>
+      Explore each section to see how colour shapes perception, emotion, and connection. Let’s find the perfect colour that not only looks good, but feels right for your brand.
+    </p>
+  </header>
+
+  <!-- RED SECTION -->
+
+  <section class="colour-section red">
+    <h2 class="tab">Looking for something bold?</h2>
+    <div class="content">
+      <h3>RED</h3>
+      <h4>The Colour of Power and Passion</h4>
+      <p>
+        Red is one of the most emotionally intense colours. It evokes strong feelings — love, passion, anger, urgency. Brands use red to demand attention, stimulate appetite, and create excitement.
+      </p>
+      <p>
+        Psychologically, red increases heart rate and blood pressure, making it a favourite in marketing when urgency or impulse is the goal. Think sales banners, clearance signs, or “Buy Now” buttons — red triggers quick decisions.
+      </p>
+      <p>
+        In branding, red communicates boldness and confidence. Brands like Coca-Cola, YouTube, Netflix, and LEGO use red to project energy, passion, and approachability.
+      </p>
+
+      <div class="logo-section">
+        <img src="images/cocacola.png" alt="Coca-Cola logo">
+        <img src="images/youtube.png" alt="YouTube logo">
+        <img src="images/netflix.png" alt="Netflix logo">
+        <img src="images/lego.png" alt="LEGO logo">
+      </div>
+
+      <p>
+        But red can also be overwhelming if overused. It’s best used in moderation or in combination with calmer tones. In web design, red often serves as a call-to-action colour, drawing the eye quickly without overstaying its welcome.
+      </p>
+
+      <p>
+        Used well, red energizes, motivates, and ignites strong feelings — all vital in building a memorable brand presence.
+      </p>
+
+      <div class="imagecontainer">
+        <img src="images/cocacolapic.png" alt="Bottles of Coca Cola">
+      </div>
+
+      <p>
+        What works well? What doesn't work well?
+      </p>
+
+      <div class="plus-minus">
+        <div class="toggle-box redplus">+</div>
+        <div class="toggle-box redminus">-</div>
+      </div>
+
+      <div class='plusandminus'>
+        <div class="expand redplus-content">
+          <h5>When used well, red symbolises...</h5>
+          <ul>
+            <li>Power</li>
+            <li>Passion</li>
+            <li>Energy</li>
+            <li>Fearlessness</li>
+            <li>Excitement</li>
+            <li>Love</li>
+          </ul>
+        </div>
+
+        <div class="expand redminus-content">
+          <h5>When overused, red can suggest...</h5>
+          <ul>
+            <li>Anger</li>
+            <li>Danger</li>
+            <li>Warning</li>
+            <li>Defiance</li>
+            <li>Aggression</li>
+            <li>Pain</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <!-- YELLOW SECTION -->
+
+  <section class="colour-section yellow">
+    <h2 class="tab">Looking for something exciting?</h2>
+    <div class="content">
+      <h3 class="yellowcontentheading">YELLOW</h3>
+      <h4 class="yellowcontent">The Colour of Optimism and Attention</h4>
+      <p class="yellowcontent">
+        Yellow is the colour of sunlight, joy, and youthfulness. It naturally evokes happiness and optimism, making it a powerful tool in brand identity when used with care.
+      </p>
+      <p class="yellowcontent">
+        Psychologically, yellow is associated with warmth, clarity, and confidence. It’s also the most visible colour from a distance, which is why it's used for warning signs and school buses. In branding, it grabs attention in a way that’s friendly and non-threatening.
+      </p>
+      <p class="yellowcontent">
+        Brands like IKEA, McDonald’s, and Snapchat use yellow to promote a sense of fun and approachability. It suggests energy without being aggressive. Tech brands like Ferrari (in its classic yellow shield) and National Geographic use yellow to symbolize prestige, curiosity, and adventure.
+      </p>
+
+      <div class="logo-section">
+        <img src="images/ikea.png" alt="Ikea logo">
+        <img src="images/snapchat.png" alt="Snapchat logo">
+        <img src="images/mcdonalds.png" alt="McDonalds logo">
+        <img src="images/natgeo.png" alt="National Geographic logo">
+        <img src="images/ferrari.png" alt="Ferrari logo">
+      </div>
+
+      <p class="yellowcontent">
+        However, yellow can also trigger anxiety or strain the eyes if overused. On websites, it’s often used as a highlight or accent, not as the main background colour.
+      </p>
+
+      <p class="yellowcontent">
+        In branding, yellow says: “We’re here, we’re fun, and we’re confident.” It’s bold without being brash — perfect for youth-oriented or innovative brands.
+      </p>
+
+      <div class="imagecontainer">
+        <img src="images/mcdonaldspic.png" alt="McDonalds fries">
+      </div>
+
+      <p class="yellowcontent">
+        What works well? What doesn't work well?
+      </p>
+
+      <div class="plus-minus">
+        <div class="toggle-box yellowplus">+</div>
+        <div class="toggle-box yellowminus">-</div>
+      </div>
+
+      <div class='plusandminus'>
+        <div class="expand yellowplus-content">
+          <h5>When used well, yellow symbolises...</h5>
+          <ul>
+            <li>Optimism</li>
+            <li>Warmth</li>
+            <li>Happiness</li>
+            <li>Innovation</li>
+            <li>Intellect</li>
+            <li>Extroversion</li>
+          </ul>
+        </div>
+
+        <div class="expand yellowminus-content">
+          <h5>When overused, yellow can suggest...</h5>
+          <ul>
+            <li>Anxiety</li>
+            <li>Fear</li>
+            <li>Caution</li>
+            <li>Irrationality</li>
+            <li>Frustration</li>
+            <li>Cowardice</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <!-- GREEN SECTION -->
+
+  <section class="colour-section green">
+    <h2 class="tab">Looking for something stable?</h2>
+    <div class="content">
+      <h3 class="greencontentheading">GREEN</h3>
+      <h4 class="greencontent">The Colour of Growth and Balance</h4>
+      <p class="greencontent">
+        Green is nature’s colour — a symbol of growth, health, and harmony. It’s often used in branding to convey freshness, sustainability, and trust.
+      </p>
+      <p class="greencontent">
+        Psychologically, green has a balancing and calming effect. It sits between warm and cool tones, making it a neutral, reassuring presence. It’s linked to renewal, wealth, and healing, which is why it’s common in health and finance sectors.
+      </p>
+      <p class="greencontent">
+        Brands like Starbucks, Whole Foods, Spotify, and Land Rover use green to promote ideas of eco-friendliness, relaxation, or reliability. In finance, green often relates to money and stability — like Fidelity or TD Bank.
+      </p>
+
+      <div class="logo-section">
+        <img src="images/starbucks.png" alt="Starbucks logo">
+        <img src="images/spotify.png" alt="Spotify logo">
+        <img src="images/garnier.png" alt="Garnier logo">
+        <img src="images/wholefoods.png" alt="WholeFoods logo">
+      </div>
+
+      <p class="greencontent">
+        Green is also widely used by sustainable or organic brands, where environmental values are key. It signals ethical choices, natural products, and a sense of responsibility.
+      </p>
+
+      <p class="greencontent">
+        In web design, green is often used in confirmation buttons (“Submit”, “Success”) due to its calming and positive associations. It encourages users to move forward with confidence. Green is the brand colour of balance — connecting the digital world with our human need for peace and progress.
+      </p>
+
+      <div class="imagecontainer">
+        <img src="images/starbuckspic.png" alt="Starbucks coffee">
+      </div>
+
+      <p class="greencontent">
+        What works well? What doesn't work well?
+      </p>
+
+      <div class="plus-minus">
+        <div class="toggle-box greenplus">+</div>
+        <div class="toggle-box greenminus">-</div>
+      </div>
+
+      <div class='plusandminus'>
+        <div class="expand greenplus-content">
+          <h5>When used well, green symbolises...</h5>
+          <ul>
+            <li>Health</li>
+            <li>Hope</li>
+            <li>Freshness</li>
+            <li>Nature</li>
+            <li>Growth</li>
+            <li>Prosperity</li>
+          </ul>
+        </div>
+
+        <div class="expand greenminus-content">
+          <h5>When overused, green can suggest...</h5>
+          <ul>
+            <li>Boredom</li>
+            <li>Stagnation</li>
+            <li>Envy</li>
+            <li>Blandness</li>
+            <li>Debilitation</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <!-- BLUE SECTION -->
+
+  <section class="colour-section blue">
+    <h2 class="tab">Looking for something reliable?</h2>
+    <div class="content">
+      <h3>BLUE</h3>
+      <h4>The Colour of Trust and Intelligence</h4>
+      <p>
+        Blue is the most widely liked colour in the world — and one of the most popular in branding. It symbolizes trust, stability, and professionalism.
+      </p>
+      <p>
+        Psychologically, blue slows the heart rate and creates a sense of calm. It’s associated with logic, clarity, and focus, which is why it’s the go-to for corporate, tech, and financial industries.
+      </p>
+      <p>
+        Brands like Facebook, Twitter, Samsung, Intel, and PayPal all lean into blue to emphasize their reliability and intelligence. Even government and healthcare institutions use blue for the same reason — think the NHS, UN, or LinkedIn.
+      </p>
+
+      <div class="logo-section">
+        <img src="images/facebook.png" alt="Facebook logo">
+        <img src="images/twitter.png" alt="Twitter logo">
+        <img src="images/samsung.png" alt="Samsung logo">
+        <img src="images/intel.png" alt="Intel logo">
+        <img src="images/paypal.png" alt="Paypal logo">
+      </div>
+
+      <p>
+        Darker blues project seriousness and strength, while lighter shades suggest friendliness and modernity. In UX/UI design, blue is often used for navigation bars, backgrounds, or trusted links.
+      </p>
+
+      <p>
+        The downside? Blue can also feel cold or impersonal if not balanced with warm tones or human elements.
+      </p>
+
+      <p>
+        In branding, blue says: “You can trust us.” It’s the colour of calm confidence — and in today’s world, that’s worth its weight in gold.
+      </p>
+
+      <div class="imagecontainer">
+        <img src="images/paypalpic.png" alt="A hand holding a PayPal card">
+      </div>
+
+      <p>
+        What works well? What doesn't work well?
+      </p>
+
+      <div class="plus-minus">
+        <div class="toggle-box blueplus">+</div>
+        <div class="toggle-box blueminus">-</div>
+      </div>
+
+      <div class='plusandminus'>
+        <div class="expand blueplus-content">
+          <h5>When used well, blue symbolises...</h5>
+          <ul>
+            <li>Trust</li>
+            <li>Loyalty</li>
+            <li>Logic</li>
+            <li>Dependability</li>
+            <li>Serenity</li>
+            <li>Security</li>
+          </ul>
+        </div>
+
+        <div class="expand blueminus-content">
+          <h5>When overused, blue can suggest...</h5>
+          <ul>
+            <li>Coldness</li>
+            <li>Emotionlessness</li>
+            <li>Unfriendliness</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <!-- PURPLE SECTION -->
+
+  <section class="colour-section purple">
+    <h2 class="tab">Looking for something imaginative?</h2>
+    <div class="content">
+      <h3>PURPLE</h3>
+      <h4>The Colour of Creativity and Luxury</h4>
+      <p>
+        Purple blends the passion of red and the calm of blue — making it the colour of creativity, imagination, and mystery. Historically, purple was rare and expensive to produce, so it became associated with royalty, wealth, and spirituality.
+      </p>
+      <p>
+        Psychologically, purple stimulates problem-solving, daydreaming, and innovation. It’s often used in branding to signal luxury, uniqueness, or artistic flair.
+      </p>
+      <p>
+        Brands like Cadbury, Hallmark, and Twitch use purple to stand out and feel elevated. It’s also popular with beauty, tech, and artistic brands that want to evoke a sense of high-end exclusivity or creative edge.
+      </p>
+
+      <div class="logo-section">
+        <img src="images/cadbury.png" alt="Cadbury logo">
+        <img src="images/twitch.png" alt="Twitch logo">
+        <img src="images/hallmark.png" alt="Hallmark logo">
+      </div>
+
+      <p>
+        Lighter shades (lavender, lilac) feel calming and gentle — great for self-care or wellness brands. Darker purples feel more opulent and mysterious, ideal for luxury goods or innovative startups.
+      </p>
+
+      <p>
+        In digital design, purple is less common — so when used, it often pops. It works well for thematic sites, streaming platforms, and entertainment brands that want to feel both modern and magical.
+      </p>
+
+      <p>
+        Purple is for brands that dare to dream differently — those who want to be remembered for more than just a product.
+      </p>
+
+      <div class="imagecontainer">
+        <img src="images/cadburypic.png" alt="Cadbury chocolate">
+      </div>
+
+      <p>
+        What works well? What doesn't work well?
+      </p>
+
+      <div class="plus-minus">
+        <div class="toggle-box purpleplus">+</div>
+        <div class="toggle-box purpleminus">-</div>
+      </div>
+
+      <div class='plusandminus'>
+        <div class="expand purpleplus-content">
+          <h5>When used well, purple symbolises...</h5>
+          <ul>
+            <li>Wisdom</li>
+            <li>Wealth</li>
+            <li>Spirituality</li>
+            <li>Imagination</li>
+            <li>Sophistication</li>
+          </ul>
+        </div>
+
+        <div class="expand purpleminus-content">
+          <h5>When overused, purple can suggest...</h5>
+          <ul>
+            <li>Reflection</li>
+            <li>Excess</li>
+            <li>Moodiness</li>
+            <li>Decadence</li>
+            <li>Suppression</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="close-btn">Close</button>
+    </div>
+  </section>
+
+  <button id="backTop">Back to the top</button>
+
+  <footer>
+  	<div class="footer-left">
+  		<h2>Hue are you?</h2>
+  		<p>A pocket guide to brand identity</p>
+  	</div>
+  	<div class="footer-right">
+  		<nav>
+  			<a> About Us </a>| 
+  			<a> Contact</a> | 
+  			<a href="references.html">References</a>
+  		</nav>
+  	</div>
+  </footer>
+</body>
+
+</html>
